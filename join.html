@@ -24,14 +24,41 @@
             <h1 align="center">Join pcIST</h1> <hr/> <br>
             <form action>
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" placeholder="Your Full name" required><br><br>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required><br><br>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{11}" required><br><br>
 
+                <label for="student_id">Student ID: </label>
+                <input type="text" id="std_id" name="std_id" required placeholder="Your Student ID">
+                <br><br>
+
+
+                 <label for="batch">Batch: </label>
+                <select id="batch" name="batch" required>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                    <option value="">32</option>
+                </select>  <br><br>
+
+
+                <label for="department">Department: </label>
+                <select id="dept" name="dept" required>
+                    <option value="">CSE</option>
+                    <option value="">ECE</option>
+                    <option value="">BBA</option>
+                </select>  <br><br>
+
+                <label for="">Why do you want to join pcIST?</label>
+                <br><br>
+                <textarea id="reason" name="reason" required placeholder="Your reason..." 
+                rows="4" cols="40"></textarea>
+                <br><br>
 
                 <label for="experience">Programming Experience Level:</label>
                 <select id="experience" name="experience" required>
