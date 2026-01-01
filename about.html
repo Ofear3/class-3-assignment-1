@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>About Page</title>
 </head>
 <body>
@@ -10,17 +11,20 @@
     <!-- Header Section -->
     <header>
         <nav>
-            <a href="index.html">Home</a>&nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp;&nbsp; 
-            <a href="events.html">Events</a>&nbsp; &nbsp;
-            <a href="join.html">Join us</a>&nbsp; &nbsp;
+            <div class="nav-bar-area"> 
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="events.html">Events</a>
+            <a href="join.html">Join us</a>
             <a href="contact.html">Contact</a>
+            </div>
+            <img class="logo" src="./images/pcist.png" alt="PCIST LOGO"> 
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section>
+        <section class="about">
             <h1 align="center">About PCIST</h1> <hr/> <br>
             <p>
                 The Programming Club of IST (pcIST) is dedicated to fostering a community of passionate programmers.
@@ -34,25 +38,42 @@
             </p>
         </section>
 
-        <section>
-            <h2>Upcoming Events</h2>
+<section class="card-container">
 
-             <p>
-             <strong>Hackathon 2025</strong><br>
-                Join our upcoming hackathon where participants will collaborate,
-                 build innovative solutions, and compete in an exciting coding challenge.<br>
-                  This event encourages creativity, teamwork, and real-world problem solving.
-                <br><br>
-                <strong>Date:</strong> Coming Soon<br>
-                <strong>Location:</strong> IST Lab 1 &amp; IST Lab 2
-            </p>
-        </section>
+    <div class="card">
+        <h2>Course</h2>
+        <p>
+            Structured academic courses covering core computer science topics.
+            Perfect for building strong fundamentals.
+        </p>
+        <button>Explore</button>
+    </div>
+
+    <div class="card">
+        <h2>Competitive Programming</h2>
+        <p>
+            Problem solving with algorithms, data structures,
+            and coding contests to boost logic and speed.
+        </p>
+        <button>Practice</button>
+    </div>
+
+    <div class="card">
+        <h2>Web Development</h2>
+        <p>
+            Frontend: HTML, CSS, JavaScript <br>
+            Backend: Laravel / Node / Database
+        </p>
+        <button>Start Learning</button>
+    </div>
+
+</section>
+
 
     </main>
 
     <!-- Footer Section -->
     <footer>
-          <hr/>
         <p align="center">&copy; 2025 Programming Club of IST. All rights reserved.</p>
     </footer>   
 

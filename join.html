@@ -1,83 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <a href="index.html">Home</a>&nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp; 
-            <a href="events.html">Events</a>&nbsp; &nbsp;
-            <a href="join.html">Join us</a>&nbsp; &nbsp;
-            <a href="contact.html">Contact</a>&nbsp; &nbsp;
-        </nav>
-    </header>
+<header>
+  <nav>
+    <div class="nav-bar-area">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="join.html">Join us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <img class="logo" src="./images/pcist.png" alt="PCIST Logo">
+  </nav>
+</header>
 
-    <!-- Main Content -->
-     <main>
-        <section>
-            <h1 align="center">Join pcIST</h1> <hr/> <br>
-            <form action>
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Full name" required><br><br>
+<main>
+  <section>
+    <h1 align="center">Join pcIST</h1>
+    <hr><br>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+    <div class="join-div">
+      <div class="container">
+        <div class="title">Registration</div>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{11}" required><br><br>
+        <div class="content">
+          <form action="#">
 
-                <label for="student_id">Student ID: </label>
-                <input type="text" id="std_id" name="std_id" required placeholder="Your Student ID">
-                <br><br>
+            <div class="user-details">
+
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Student ID</span>
+                <input type="text" placeholder="Enter your Student ID" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Select Your Batch</span>
+                <select required>
+                  <option value="" disabled selected>Select Batch</option>
+                  <option value="27">Batch 27</option>
+                  <option value="28">Batch 28</option>
+                  <option value="29">Batch 29</option>
+                  <option value="30">Batch 30</option>
+                  <option value="31">Batch 31</option>
+                  <option value="32">Batch 32</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Select Your Department</span>
+                <select required>
+                  <option value="" disabled selected>Select Department</option>
+                  <option value="CSE">CSE</option>
+                  <option value="ECE">ECE</option>
+                  <option value="BBA">BBA</option>
+                </select>
+              </div>
+
+              <div class="input-box" style="width:100%;">
+                <span class="details">Why do you want to join pcIST?</span>
+                <textarea rows="3" placeholder="Your answer here..." required></textarea>
+              </div>
+
+            <div class="input-box">
+  <span class="details">Date of Birth</span>
+  <input type="date" required>
+</div>
 
 
-                 <label for="batch">Batch: </label>
-                <select id="batch" name="batch" required>
-                    <option value="">28</option>
-                    <option value="">29</option>
-                    <option value="">30</option>
-                    <option value="">31</option>
-                    <option value="">32</option>
-                </select>  <br><br>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="male" required>
+              <input type="radio" name="gender" id="female">
 
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="male">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="female">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+              </div>
+            </div>
 
-                <label for="department">Department: </label>
-                <select id="dept" name="dept" required>
-                    <option value="">CSE</option>
-                    <option value="">ECE</option>
-                    <option value="">BBA</option>
-                </select>  <br><br>
+            <div class="gender-details">
+              <input type="radio" name="experience" id="beginner" required>
+              <input type="radio" name="experience" id="intermediate">
+              <input type="radio" name="experience" id="advanced">
 
-                <label for="">Why do you want to join pcIST?</label>
-                <br><br>
-                <textarea id="reason" name="reason" required placeholder="Your reason..." 
-                rows="4" cols="40"></textarea>
-                <br><br>
+              <span class="gender-title">Programming Experience</span>
+              <div class="category">
+                <label for="beginner">
+                  <span class="dot one"></span>
+                  <span class="gender">Beginner</span>
+                </label>
+                <label for="intermediate">
+                  <span class="dot two"></span>
+                  <span class="gender">Intermediate</span>
+                </label>
+                <label for="advanced">
+                  <span class="dot three"></span>
+                  <span class="gender">Advanced</span>
+                </label>
+              </div>
+            </div>
 
-                <label for="experience">Programming Experience Level:</label>
-                <select id="experience" name="experience" required>
-                    <option value="beginner">Beginner</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-                </select><br><br>
+            <div class="button" style="display:flex; gap:20px; justify-content:center; padding-left:0;">
+              <input type="submit" value="Register">
+              <input type="reset" value="Reset">
+            </div>
 
-                <button type="submit">Register</button>
-                <button type="reset">Reset</button>
-            </form>
-        </section>
-     </main>
+          </form>
+        </div>
+      </div>
+    </div>
 
-    <!-- Footer Section -->
-    <footer>
-          <hr/>
-        <p align="center">&copy; 2025 Programming Club of IST. All rights reserved.</p>
-    </footer> 
+  </section>
+</main>
+
+<footer>
+  <hr>
+  <p align="center">&copy; 2025 Programming Club of IST. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

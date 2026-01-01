@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Event Page</title>
 </head>
 <body>
@@ -10,20 +11,22 @@
     <!-- Header Section -->
     <header>
         <nav>
-            <a href="index.html">Home</a>&nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp; 
-            <a href="events.html">Events</a>&nbsp; &nbsp;
-            <a href="join.html">Join us</a>&nbsp; &nbsp;
+            <div class="nav-bar-area"> 
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="events.html">Events</a>
+            <a href="join.html">Join us</a>
             <a href="contact.html">Contact</a>
+            </div>
+            <img class="logo" src="./images/pcist.png" alt="PCIST LOGO"> 
         </nav>
     </header>
-
     <!-- Main Content -->
      <main>
         <section>
-            <h1 align="center">Events</h1> <hr/> <br>
+            <h1>Events</h1> <hr/> <br>
 
-            <p>
+            <p class="text">
                  <strong>Annual Hackathon</strong><br>
                  Our Programming Club <em>pcIST</em> is organizing an exciting hackathon where students
                   can work in teams, share ideas, and build creative projects.<br> This event is open to 
@@ -37,14 +40,14 @@
                 <strong>Benefits:</strong> Certificates, prizes, and hands-on experience
             </p>
 
-            <a href="join.html">Click here to join pcIST</a>
+            <a class="event-a" href="join.html">Click here to join pcIST</a>
             <br>
 
         </section>
 
         <section>
-          <h2>Event Schedule</h2>  
-            <table border="1">
+          <h2 class="table-title">Event Schedule</h2>  
+            <table>
                 <thead>
 
                     <tr>
@@ -95,7 +98,6 @@
 
     <!-- Footer Section -->
     <footer>
-          <hr/>
         <p align="center">&copy; 2025 Programming Club of IST. All rights reserved.</p>
     </footer>  
 

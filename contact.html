@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact Page</title>
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <nav>
-            <a href="index.html">Home</a>&nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp; 
-            <a href="events.html">Events</a>&nbsp; &nbsp;
-            <a href="join.html">Join us</a>&nbsp; &nbsp;
+        <nav class="nav">
+            <div class="nav-bar-area"> 
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="events.html">Events</a>
+            <a href="join.html">Join us</a>
             <a href="contact.html">Contact</a>
+            </div>
+            <img class="logo" src="./images/pcist.png" alt="PCIST LOGO"> 
         </nav>
     </header>
 
@@ -22,43 +26,70 @@
     <main>
         <section>
             <h1 align="center">Contact Us</h1> <hr/> <br>
-            <p>
-                We would love to hear from you! Whether you have questions about our club,
-                events, or membership, feel free to reach out to us.
-            </p>
 
-            <div>
-            <form action="">
-                <label for="name">Your name:</label>
-                <input type="text" id="name" name="name"
-                placeholder="Your name" required><br><br>
+ <div class="join-div">
+  <div class="container">
 
-                <label for="email">Your email:</label>
-                <input type="email" id="email" name="email"
-                placeholder="Your email" required><br><br>
+    <div class="title">Get in Touch</div>
 
-                <label for="message">Your message:</label><br><br>
-                <textarea id="message" name="message" required rows="4" cols="40" placeholder="Your message..."></textarea>
-                <br><br>
+    <div class="content">
+      <form action="#">
 
-                <button type="submit"> Send message</button>
-            </form>
-            </div>
+        <div class="user-details">
 
-            <p>
-                <strong>Email:</strong> pcist@gmail.com<br>
-                <strong>Phone:</strong> +8801234567890<br>  
-                <strong><a href="https://www.facebook.com/pcistbd" target="_blank">Facbook</a></strong>
-                &nbsp;    
-                <strong><a href="https://www.instagram.com/pcistbd" target="_blank">Instagram</a></strong>
-                &nbsp;  
-                <strong><a href="https://www.twiter.com/pcistbd" target="_blank">Twiter</a></strong>
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Please enter first name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Please enter last name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Please enter email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Please enter phone number" required>
+          </div>
+
+          <div class="input-box" style="width:100%;">
+            <span class="details">What do you have in mind?</span>
+            <textarea rows="6" placeholder="Please enter your message" required></textarea>
+          </div>
+
+        </div>
+
+        <div class="button" style="display:flex; justify-content:center;">
+          <input type="submit" value="Submit">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+<p class="contact-info">
+  <strong>Email:</strong> pcist@gmail.com<br>
+  <strong>Phone:</strong> +8801234567890<br>
+  <strong><a href="https://www.facebook.com/pcistbd" target="_blank">Facebook</a></strong>
+  &nbsp;
+  <strong><a href="https://www.instagram.com/pcistbd" target="_blank">Instagram</a></strong>
+  &nbsp;
+  <strong><a href="https://www.twiter.com/pcistbd" target="_blank">Twitter</a></strong>
+</p>
+
         </section>
     </main>
 
         <!-- Footer Section -->
     <footer>
-        <hr/>
         <p align="center">&copy; 2025 Programming Club of IST. All rights reserved.</p>
     </footer>    
 
