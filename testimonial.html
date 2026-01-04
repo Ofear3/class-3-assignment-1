@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin:0;
+        padding:0;
+        display:flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+    main {
+    flex: 1; 
+    padding-top: 60px;
+}
+
+header nav {
+    background-color: #00d4ff; /* nicer aqua tone */
+    padding: 12px 0; /* compact */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+     position: fixed; /* makes navbar stick */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* stays on top */
+}
+
+header nav a {
+    margin: 0 15px; /* horizontal spacing */
+    padding: 8px 15px; /* comfortable padding */
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease; /* smooth hover effect */
+    border-radius: 6px; /* optional rounded hover */
+}
+
+header nav a:hover {
+    color: #f0d506;
+    background-color: rgba(255, 255, 255, 0.2); /* subtle hover bg */
+    text-decoration: underline;
+    transform: scale(1.05); /* subtle zoom on hover */
+}
+
+    h1{
+        text-align:center;
+        margin:20px;
+        color:rgb(6, 115, 55);
+        font-size:48px;
+        font-weight: 900;
+    }
+
+/* ---------------CARD DESIGN---------------- */
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+    .container {
+        width:400px;
+        background-color:rgb(68, 156, 75);
+        margin:30px;
+        padding:10px;
+        padding-left:10px;
+        box-shadow: 0 1px 10px rgb(1, 38, 17);
+
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.1);
+}
+
+
+    .card-icon {
+        text-align:center;
+        margin:10px;
+    }
+    .card-icon img{
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+    }
+    .card-title h2{
+        text-align:center;
+        color:white;
+        font-size:28px;
+        font-weight: 900;
+    }
+
+    .card-des{
+        margin:10px;
+        margin:10px;
+        flex-grow: 1;
+    }
+    .card-des p{
+        text-align: justify;
+        line-height: 1.5;
+        color:rgb(19, 34, 1)
+    }
+
+    .card-price{
+        padding-right:10px;
+        text-align:right;
+        margin:0;
+    }
+
+    .card-price h3{
+        color:white;
+        font-size:20px;
+        font-weight: 700;
+    }
+
+    .btn{
+        text-align:center;
+    }
+    .btn button{
+        padding:10px 30px;
+        background-color: blue;
+        font-size:16px;
+        color: white;
+        cursor:pointer;
+        border:none;
+        border-radius: 8px;
+        width:160px;
+        height: 40px;
+        transition: transform 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+    .btn button:hover{
+        background-color:green;
+        transform: scale(1.1);
+
+    }
+
+
+/* ----------------Rating------------- */
+.rating-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom:30px;
+}
+
+.rating-line .label {
+    font-weight: bold;
+    color: #fff;  
+}
+
+.rating-line .star {
+    font-size: 24px;
+    color: gold;
+}
+
+.rating-line .inactive {
+    color: #ccc;
+}
+
+    /* -------------footer design------------ */
+    .simple-footer {
+        background-color: #2A7B9B;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px 10px;
+        margin-top:75px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+}
+
+    .simple-footer p {
+       margin: 0;
+}
+
+</style>
+
+<body>
+
+    <!-- ------------Header Section ------------>
+   <header>
+        <nav>
+            <a href="services.html">Services</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="price.html">Price</a>
+        </nav>
+   </header> 
+
+    <!-- ------------Main Section ------------>
+     <main>
+
+        <h1>Testimonial</h1>
+
+        <section>
+            <div class="card"> 
+                                                            <!-- Container 1 -->
+            <div class="container">
+
+                <div class="card-icon">
+                    <img src="https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg" alt="person 1">
+                </div>
+
+                <div class="card-title">
+                    <h2>James Wilson</h2>
+                </div>
+
+                <div class="card-des">
+                    <p>I completed the Web Development course from the club, and it was an amazing experience. The lessons were well-structured and beginner-friendly.
+                         I learned how to build responsive 
+                        websites and understand both frontend basics and development logic. This course inspired me to continue learning web technologies</p>
+                </div>
+
+            <div class="rating-line">
+                <span class="label">Rating</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+
+            </div>
+
+
+                                                            <!-- Container 2 -->   
+        <div class="container">
+
+                <div class="card-icon">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/033/129/417/small/a-business-man-stands-against-white-background-with-his-arms-crossed-ai-generative-photo.jpg" alt="person 2">
+                </div>
+
+                <div class="card-title">
+                    <h2>Robert Miller</h2>
+                </div>
+
+                <div class="card-des">
+                    <p>The Competitive Programming course from the club was extremely helpful. I learned how to approach problems efficiently and write optimized code. 
+                        Alongside this, the Basic C++ course clarified core concepts that I still use today. The learning environment was supportive and motivating</p>
+                </div>
+
+            <div class="rating-line">
+                <span class="label">Rating</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star ">★</span>
+                <span class="star">★</span>
+            </div>
+
+            </div>
+
+
+                                                                 <!-- Container 3 -->
+           <div class="container">
+
+                <div class="card-icon">
+                    <img src="https://plus.unsplash.com/premium_photo-1688350808212-4e6908a03925?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmVzc2lvbmFsJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="service icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Emily Johnson</h2>
+                </div>
+
+                <div class="card-des">
+                    <p>I started my programming journey with the club through the Basic C++ course, and it built a very strong foundation for me. 
+                        The instructors explained concepts clearly and practically. After that,
+                         Competitive Programming sessions helped me improve my problem-solving 
+                         skills and logical thinking. This club truly boosted my confidence in coding.</p>
+                </div>
+
+            <div class="rating-line">
+                <span class="label">Rating</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star inactive">★</span>
+            </div>
+
+            </div>
+
+
+            </div>
+        </section>
+     </main>
+
+     <footer class="simple-footer">
+        <p>© 2026 All Rights Reserved | Designed by Mohammad Saif Al Islam</p>
+    </footer>
+
+</body>
+</html>

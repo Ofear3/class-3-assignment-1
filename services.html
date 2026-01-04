@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin:0;
+        padding:0;
+        display:flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+    main {
+    flex: 1; 
+    padding-top: 60px;
+}
+
+header nav {
+    background-color: #00d4ff; /* nicer aqua tone */
+    padding: 12px 0; /* compact */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+     position: fixed; /* makes navbar stick */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* stays on top */
+}
+
+header nav a {
+    margin: 0 15px; /* horizontal spacing */
+    padding: 8px 15px; /* comfortable padding */
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease; /* smooth hover effect */
+    border-radius: 6px; /* optional rounded hover */
+}
+
+header nav a:hover {
+    color: #f0d506;
+    background-color: rgba(255, 255, 255, 0.2); /* subtle hover bg */
+    text-decoration: underline;
+    transform: scale(1.05); /* subtle zoom on hover */
+}
+
+
+    h1{
+        text-align:center;
+        margin:20px;
+        color:rgb(6, 115, 55);
+        font-size:48px;
+        font-weight: 900;
+    }
+
+/* ---------------CARD DESIGN---------------- */
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+     justify-content: center;
+}
+
+    .container {
+        width:400px;
+        background-color:rgb(17, 160, 160);
+        margin:30px;
+        padding:10px;
+        padding-left:10px;
+        box-shadow: 0 10px 10px rgb(1, 36, 42);
+
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.1);
+}
+
+    .card-icon {
+        text-align:center;
+        margin:10px;
+    }
+    .card-icon img{
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+    }
+    .card-title h2{
+        text-align:center;
+        color:white;
+        font-size:28px;
+        font-weight: 900;
+    }
+
+    .card-des{
+        margin:10px;
+        margin:10px;
+        flex-grow: 1;
+    }
+    .card-des p{
+        text-align: justify;
+        line-height: 1.5;
+        color:rgb(19, 34, 1)
+    }
+
+    .card-price{
+        padding-right:10px;
+        text-align:right;
+        margin:0;
+    }
+
+    .card-price h3{
+        color:white;
+        font-size:20px;
+        font-weight: 700;
+    }
+
+    .btn{
+        text-align:center;
+    }
+    .btn button{
+        padding:10px 30px;
+        background-color: blue;
+        font-size:16px;
+        color: white;
+        cursor:pointer;
+        border:none;
+        border-radius: 8px;
+        width:160px;
+        height: 40px;
+        transition: transform 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+    .btn button:hover{
+        background-color:green;
+         transform: scale(1.1);
+
+    }
+
+
+    /* -------------footer design------------ */
+    .simple-footer {
+        background-color: #2A7B9B;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px 10px;
+        margin-top:75px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+}
+
+    .simple-footer p {
+       margin: 0;
+}
+
+
+
+</style>
+
+<body>
+
+    <!-- ------------Header Section ------------>
+   <header>
+        <nav>
+            <a href="services.html">Services</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="price.html">Price</a>
+        </nav>
+   </header> 
+
+    <!-- ------------Main Section ------------>
+     <main>
+
+        <h1>Our Services</h1>
+
+        <section>
+            <div class="card"> 
+                                                            <!-- Container 1 -->
+            <div class="container">
+
+                <div class="card-icon">
+                    <img src="https://logowik.com/content/uploads/images/t_911_c_logo.jpg" alt="service icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Programming basics</h2>
+                </div>
+
+                <div class="card-des">
+                    <p>This course introduces the fundamental concepts of 
+                        programming language C++. It covers data types, variables, conditions,
+                        loops, functions, and basic problem-solving 
+                        to help learners build a strong foundation 
+                        in programming.</p>
+                </div>
+
+                <div class="card-price">
+                    <h3>Course Fee: Free</h3>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Learn More...</button>
+                </div>
+
+            </div>
+
+
+                                                            <!-- Container 2 -->   
+        <div class="container">
+
+                <div class="card-icon">
+                    <img src="https://thumbs.dreamstime.com/b/programming-language-learn-to-code-website-design-development-learn-to-code-programming-language-website-design-127572444.jpg" alt="service icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Competitive Progamming</h2>
+                </div>
+
+                <div class="card-des">
+                    <p>This course focuses on developing problem-solving and logical thinking skills through competitive programming.
+                         It covers basic algorithms, data structures, and coding techniques to help learners solve problems efficiently
+                          and prepare for programming contests.</p>
+                </div>
+
+                <div class="card-price">
+                    <h3>Course Fee: 499 BDT</h3>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Learn More...</button>
+                </div>
+
+            </div>
+
+
+                                                                 <!-- Container 3 -->
+           <div class="container">
+
+                <div class="card-icon">
+                    <img src="https://cdn-icons-png.freepik.com/512/8713/8713437.png" alt="service icon">
+                </div>
+
+                <div class="card-title">
+                    <h2>Programming basics</h2>
+                </div>
+
+                <div class="card-des">
+                    <p>This course introduces the fundamentals of web development. It covers HTML,
+                         CSS, basic JavaScript, and responsive design concepts to help learners build 
+                         simple, functional, and visually appealing websites.</p>
+                </div>
+
+                <div class="card-price">
+                    <h3>Course Fee: 999 BDT</h3>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Learn More...</button>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+     </main>
+
+     <footer class="simple-footer">
+        <p>© 2026 All Rights Reserved | Designed by Mohammad Saif Al Islam</p>
+    </footer>
+
+
+</body>
+</html>

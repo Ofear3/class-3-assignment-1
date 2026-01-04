@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+
+    <style>
+        /* ----------------- Body & Layout ----------------- */
+        body {
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            display:flex;
+            flex-direction: column;
+            min-height: 100vh; /* footer bottom */
+        }
+
+        main {
+            flex: 1;
+            padding-top: 60px; /* navbar height */
+        }
+
+        /* ----------------- Navbar ----------------- */
+        header nav {
+            background-color: #00d4ff;
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            position: fixed; /* sticky navbar */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+
+        header nav a:hover {
+            color: #f0d506;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-decoration: underline;
+            transform: scale(1.05);
+        }
+
+        /* ----------------- Page Title ----------------- */
+        h1{
+            text-align:center;
+            margin:20px;
+            color:rgb(6, 115, 55);
+            font-size:48px;
+            font-weight: 900;
+        }
+
+        /* ----------------- Pricing Section ----------------- */
+        .pricing-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .pricing-section h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #2A7B9B;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* all cards same height */
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Card */
+        .pricing-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            width: 280px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* push button bottom */
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Popular plan highlight */
+        .popular {
+            border: 3px solid #ffdd57;
+            position: relative;
+        }
+
+        .popular .badge {
+            position: absolute;
+            top: -12px;
+            background-color: #ffdd57;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .card-header h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #2A7B9B;
+            margin-bottom: 20px;
+        }
+
+        .currency {
+            font-size: 18px;
+        }
+
+        .duration {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Features list */
+        .features {
+            list-style: none;
+            width: 100%;
+            margin-bottom: 25px;
+            padding: 0;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Subscribe button */
+        .subscribe-btn {
+            background-color: #2A7B9B;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #1e5f7a;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .simple-footer {
+            background-color: #2A7B9B;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px 10px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        .simple-footer p {
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="services.html">Services</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="price.html">Price</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1>Our Pricing Plans</h1>
+
+        <section class="pricing-section">
+            <div class="pricing-container">
+
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <p class="price"><span class="currency">BDT</span>100<span class="duration">/mo</span></p>
+                    </div>
+                    <ul class="features">
+                        <li>✔ Feature 1</li>
+                        <li>✔ Feature 2</li>
+                        <li>✔ Feature 3</li>
+                    </ul>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card popular">
+                    <div class="card-header">
+                        <h3>Pro</h3>
+                        <p class="price"><span class="currency">BDT</span>200 <span class="duration">/mo</span></p>
+                        <span class="badge">Most Popular</span>
+                    </div>
+                    <ul class="features">
+                        <li>✔ Feature 1</li>
+                        <li>✔ Feature 2</li>
+                        <li>✔ Feature 3</li>
+                        <li>✔ Feature 4</li>
+                    </ul>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <p class="price"><span class="currency">BDT</span>500<span class="duration">/mo</span></p>
+                    </div>
+                    <ul class="features">
+                        <li>✔ Feature 1</li>
+                        <li>✔ Feature 2</li>
+                        <li>✔ Feature 3</li>
+                        <li>✔ Feature 4</li>
+                        <li>✔ Feature 5</li>
+                    </ul>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="simple-footer">
+        <p>© 2026 All Rights Reserved | Designed by Mohammad Saif Al Islam</p>
+    </footer>
+</body>
+</html>
